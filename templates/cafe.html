@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+    {% if user.is_authenticated %}
+        <h1>Nearby Cafes</h1>
+
+        <div id="map"></div>
+        <script src="{% static 'cafe.js' %}" defer></script>
+    {% else %}
+        <h3> You not logged in yet! Please <a href={% url 'login' %}> Login </a> </h3>
+    {% endif %}
+
+{% endblock %}

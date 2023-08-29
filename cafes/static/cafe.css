@@ -1,0 +1,13 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+#map {
+  width: 600px; /* Adjust the width as needed */
+  height: 600px; /* Adjust the height as needed */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
